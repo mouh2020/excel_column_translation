@@ -18,4 +18,5 @@ for title in enumerate(df[column_title].to_list()[starting_row:ending_row]) :
             import time
             print(f"error occured : {str(e)}")
             time.sleep(5)
+    current_row+=1
     print(f"{current_row} -origin text : {title} - translated to : {str(translation.text) if translation else None}")
